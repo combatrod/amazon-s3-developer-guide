@@ -44,7 +44,7 @@ namespace Amazon.DocSamples.S3
             }
             catch (Exception e)
             {
-                Console.WriteLine("Unknown encountered on server. Message:'{0}' when writing an object", e.Message);
+                Console.WriteLine("Unknown error encountered on server. Message:'{0}' when writing an object", e.Message);
             }
         }
         static async Task<string> FindBucketLocationAsync(IAmazonS3 client)
